@@ -1,0 +1,41 @@
+HTML - Hypertext Markup Language
+
+When it developed? 
+-> 1993
+-> tim berners lee
+
+browsers -> goggle chrome, firefox, microsoft edge, safari, opera, IE
+
+editors -> which is provide you facility of type code.
+for HTML -> visual studio code, sublime, notepad, notepad++, atom
+
+HTTPS -> Hypertext transfer protocal secure
+
+search engine -> google, yahoo, bing
+
+html is a non-case sensitive. uppercase and lowercase consider are same.
+
+what is an element?
+element is a particular word which is written in a tag. for ex, in <html> the html is an element.
+
+what is tag?
+an element which  is written in angle bracket 
+i.e. a tag.
+
+what is opening tag and closing tag?
+for ex. <html> - starting tag   </html> closing tag.
+
+what is container ?
+the content written between any tag it called container.
+for ex, <html> ... </html>
+    <head> .... </head>
+
+non-closing tag / void tag ? 
+<img>, <link>, <hr>, <br>
+
+what is attribute?
+additional functionality
+
+HTML and HTML5
+HTML - basic tag
+HTML5 - embeded multimedia, audio, video, svg and canvas
