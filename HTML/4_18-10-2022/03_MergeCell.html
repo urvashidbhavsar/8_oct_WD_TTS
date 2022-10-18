@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- rowspan and colspan used for merge cell
+    both attribute used in <td> or <th> tag -->
+    <table
+      border="1"
+      cellpadding="5px"
+      style="
+        width: 30%;
+        height: 200px;
+        border-color: blue;
+        color: red;
+        background-color: rgb(141, 141, 134);
+      "
+    >
+      <!-- give a table heading used <caption> tag -->
+      <caption>
+        <i>A test table with merged cell</i>
+      </caption>
+      <tr>
+        <!-- when we used rowspan remove one column from next row -->
+        <!-- when we used colspan remove one column on that particular row -->
+        <th rowspan="2"></th>
+        <th colspan="2">Avarage</th>
+        <!-- <th>1</th> -->
+        <th rowspan="2">Red Eyes</th>
+      </tr>
+      <tr>
+        <!-- <th>1</th> -->
+        <th>Height</th>
+        <th>Weight</th>
+        <!-- <th>1</th> -->
+      </tr>
+      <tr>
+        <th>Male</th>
+        <td>1.9</td>
+        <td>0.003</td>
+        <td>40%</td>
+      </tr>
+      <tr>
+        <th>Females</th>
+        <td>1.7</td>
+        <td>0.002</td>
+        <td>43%</td>
+      </tr>
+    </table>
+  </body>
+</html>
