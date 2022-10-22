@@ -1,0 +1,11 @@
+ImageMap -> apply link on some portion/shape.
+
+to open another page or another image.
+
+ImageMap -> apply on 3 shapes 
+    (1) rect (2) circle    (3) polygon
+
+used tag ->
+<map> <area> - these are pair tag.
+
+used map with image apply on "usemap" attribute.
