@@ -1,0 +1,10 @@
+The position property specifies the type of positioning method used for an element. There are five different position values:
+
+static - default / normal
+fixed - to fixed content on the browser
+sticky
+relative
+absolute
+
+if we used position fixed, relative, absolute and sticky 
+then used another property i.e. top, bottom, left and right to set a content in browser.

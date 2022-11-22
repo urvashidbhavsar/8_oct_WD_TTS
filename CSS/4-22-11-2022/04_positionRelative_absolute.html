@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        position -relative like a parent 
+        position - absolute like a children
+        */
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      .main {
+        position: relative;
+      }
+      .image-1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .image-2 {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+      }
+      .image-3 {
+        position: absolute;
+        top: 120px;
+        left: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="image-1">
+        <img src="../images/wall3.jfif" alt="" />
+      </div>
+      <div class="image-2">
+        <img src="../images/wall4.jfif" alt="" />
+      </div>
+      <div class="image-3">
+        <img src="../images/wall5.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
