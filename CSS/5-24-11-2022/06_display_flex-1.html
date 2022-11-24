@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* display: flex and display :grid both apply in parent class */
+      .main div {
+        height: 200px;
+        /* width: 200px; */
+        border: 2px solid black;
+      }
+      .main {
+        width: 100%;
+        display: flex;
+        background-color: cadetblue;
+      }
+      .div1 {
+        width: 33%;
+        background-color: aquamarine;
+      }
+      .div2 {
+        width: 33%;
+        background-color: bisque;
+      }
+      .div3 {
+        width: 34%;
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div3">Div3</div>
+    </div>
+  </body>
+</html>

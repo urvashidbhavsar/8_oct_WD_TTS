@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+            some property which is used with 
+            display : flex;
+
+            flex -
+            flex-grow
+            flex-shrink
+            flex-basis
+            flex-direction
+            flex-wrap
+            justify-content
+            align-item
+            gap
+        */
+      .main div {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        color: white;
+      }
+      .main {
+        background-color: aqua;
+        display: flex;
+      }
+      .div1,
+      .div3,
+      .div5 {
+        background-color: blue;
+        flex: 1;
+      }
+      .div2,
+      .div4 {
+        background-color: green;
+        flex: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="div1">div 1</div>
+      <div class="div2">div 2</div>
+      <div class="div3">div 3</div>
+      <div class="div4">div 4</div>
+      <div class="div5">div 5</div>
+    </div>
+  </body>
+</html>

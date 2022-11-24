@@ -1,0 +1,5 @@
+display property have mainly 5 values ->
+
+inline, inline-block, block, flex, grid
+
+flex and grid updated in css3
