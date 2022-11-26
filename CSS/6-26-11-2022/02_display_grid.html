@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        /* set content in tabular form. */
+        background-color: rgb(14, 73, 73);
+        display: grid;
+        /*     grid-template-columns: auto auto auto auto auto */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(5, 1fr);
+
+        /* grid-template-columns: 1fr 2fr 3fr 1fr 1fr; -> set difference column sizes */
+        justify-items: center;
+        /* row-gap: 20px; */
+        /* column-gap: 20px; */
+        gap: 20px;
+      }
+      .main .div1 {
+        height: 100px;
+        width: 100px;
+        background-color: darkblue;
+        color: white;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="div1">1</div>
+      <div class="div1">2</div>
+      <div class="div1">3</div>
+      <div class="div1">4</div>
+      <div class="div1">5</div>
+      <div class="div1">6</div>
+      <div class="div1">7</div>
+      <div class="div1">8</div>
+      <div class="div1">9</div>
+      <div class="div1">10</div>
+    </div>
+  </body>
+</html>
