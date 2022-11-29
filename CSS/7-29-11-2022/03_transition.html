@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: rgb(3, 57, 39);
+
+        /* transition: ; ->short hand property */
+        /* transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease / ease-in / ease-out / ease-in-out /
+          linear ; */
+        /* transition-delay: ; -> waiting time */
+      }
+      .div1 {
+        /* duration property timing-function */
+        transition: 1s all ease;
+        /* transition-delay: 2s; */
+      }
+      .div1:hover {
+        width: 200px;
+      }
+      .div2 {
+        transition: 1s all ease-in;
+      }
+      .div2:hover {
+        width: 200px;
+      }
+      .div3 {
+        transition: 1s all ease-out;
+      }
+      .div3:hover {
+        width: 200px;
+      }
+      .div4 {
+        transition: 1s all ease-in-out;
+      }
+      .div4:hover {
+        width: 200px;
+      }
+      .div5 {
+        transition: 1s all linear;
+      }
+      .div5:hover {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- transition is use to smoothly move -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+  </body>
+</html>
