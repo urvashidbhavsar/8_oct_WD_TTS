@@ -1,0 +1,42 @@
+.summ-coll {
+  background-color: aliceblue;
+}
+.summer-coll {
+  display: flex;
+  padding: 50px;
+}
+.left-info {
+  padding: 20px;
+  font-family: system-ui;
+}
+.left-info .head {
+  font-size: 18px;
+  color: magenta;
+  padding-bottom: 5px;
+}
+.left-info h1 {
+  font-size: 3em;
+}
+.left-info .des {
+  font-size: 18px;
+  color: gray;
+  padding-bottom: 20px;
+}
+.left-info button {
+  height: 40px;
+  width: 120px;
+  background: magenta;
+  border: none;
+  color: white;
+  font-family: system-ui;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.right-info {
+  padding: 20px;
+}
+.right-info img {
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+}

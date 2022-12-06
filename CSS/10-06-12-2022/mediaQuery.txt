@@ -1,0 +1,16 @@
+media query used to make website responsive.
+
+mobile screen device -> mini, large
+tablate 
+leptop -> mini, large
+tv screen 
+
+maximum -> 10 -> work less than and equal to 10
+minimum -> work greater than and equal to 10
+
+ < 576px -> work small screen mobile device
+ > 576px -> work large screen mobile device
+ > 768px -> woek on tablate screen device
+ > 992px -> mini leptop screen device
+ > 1140px (1200px) -> max leptop screen device
+ > 1400px -> extra large
