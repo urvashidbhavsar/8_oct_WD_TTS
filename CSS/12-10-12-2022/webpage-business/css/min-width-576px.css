@@ -1,0 +1,23 @@
+@media (min-width: 576px) {
+  .container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /* =========== heading ============= */
+  .header .bg-img {
+    height: 500px;
+  }
+  .header .nav-bar .nav {
+    display: none;
+  }
+  .header .nav .navig {
+    flex: 2;
+  }
+  .header .nav-bar .theme {
+    justify-content: flex-end;
+    column-gap: 10px;
+  }
+  .header .nav-bar .theme button {
+    display: block;
+  }
+}

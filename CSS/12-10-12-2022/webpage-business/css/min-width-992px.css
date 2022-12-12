@@ -1,0 +1,19 @@
+@media (min-width: 992px) {
+  /* =========== heading ============= */
+  .header .bg-img {
+    height: 600px;
+  }
+  .header .nav-bar .nav {
+    flex: 8;
+    display: flex;
+    padding: 10px;
+  }
+  .header .nav-bar .theme {
+    /* padding: 0; */
+    justify-content: flex-end;
+    column-gap: 10px;
+  }
+  .header .nav-bar .theme button {
+    display: none;
+  }
+}
