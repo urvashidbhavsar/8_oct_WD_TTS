@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+  /* ================ about as ================= */
+  .about .cont-space {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .about .cont-space .content-1 {
+    padding: 0px;
+  }
+}
