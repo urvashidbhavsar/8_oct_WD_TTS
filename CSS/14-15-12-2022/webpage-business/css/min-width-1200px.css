@@ -1,0 +1,23 @@
+@media (min-width: 1200px) {
+  .container {
+    border-bottom: 1px solid white;
+  }
+  /* =========== heading ============= */
+  .header .bg-img {
+    height: 700px;
+  }
+  .header .nav-bar .theme {
+    justify-content: flex-start;
+    column-gap: 10px;
+  }
+  /* ================== project section =================== */
+  .new-project img {
+    height: 400px;
+    width: 350px;
+  }
+  .new-project .new-p-sec {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  border-bottom: 1px solid white;
+}
+/* ==================== header ======================== */
+.header {
+  position: relative;
+}
+.header .bg-img {
+  background-image: url(../images/banner1.jpg);
+  height: 700px;
+  /* filter: brightness(70%); */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.header .bg-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.687);
+  z-index: -1;
+}
+.header a {
+  color: white;
+}
+.header .nav-bar {
+  display: flex;
+  padding: 20px;
+  z-index: 11;
+}
+.header .nav-bar .logo {
+  padding: 20px;
+  flex: 1;
+}
+.header .nav-bar .logo a {
+  font-size: 30px;
+  color: #0ead69;
+  font-weight: 700;
+}
+.header .nav-bar .logo a span {
+  color: white;
+}
+.header .nav-bar .nav {
+  flex: 8;
+  display: flex;
+  padding: 10px;
+}
+.header .nav .navig {
+  flex: 2;
+}
+.header .nav .navig ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.header .nav .navig ul li {
+  padding: 10px;
+}
+.header .nav .btn-start {
+  justify-content: flex-end;
+  flex: 1;
+  display: flex;
+  padding: 10px;
+}
+.header .nav .btn-start button {
+  height: 40px;
+  width: 125px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0ead69;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+.header .nav-bar .theme {
+  flex: 1;
+  padding: 25px 0px;
+  font-size: 29px;
+  color: white;
+  display: flex;
+}
+.header .nav-bar .theme button {
+  display: none;
+  height: 35px;
+  width: 40px;
+  border-radius: 5px;
+  border: white;
+  background: #0ead69;
+  color: white;
+}
+/* ============== hero image content ====================== */
+.content {
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.content p {
+  font-family: revert;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.content h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.content button {
+  height: 40px;
+  width: 130px;
+  border-radius: 5px;
+  background: #ffffff57;
+  color: white;
+  border: 2px solid white;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 1s all ease;
+}
+.content button:hover {
+  background-color: #0ead69;
+  border: none;
+}
+/* ================ about as ================= */
+.about {
+  padding: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about .cont-space {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.about .cont-space .heading p {
+  color: rgb(165, 77, 165);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.about .cont-space .heading h1 {
+  font-size: 35px;
+}
+.about .cont-space .content-1 {
+  color: gray;
+  line-height: 25px;
+  word-spacing: 2px;
+  padding: 30px;
+}
+
+/* ================ about img section =============== */
+.about-img .about-info {
+  padding: 50px;
+}
+.about-img .about-info .about-img-zoom {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  margin: 0px 30px;
+  position: relative;
+}
+.about-img .about-info .content-of-img {
+  position: absolute;
+  top: 50px;
+  line-height: 40px;
+  display: grid;
+  padding: 10px;
+}
+.about-img .about-info .content-of-img a {
+  color: white;
+  font-size: 30px;
+}
+.about-img .about-info .content-of-img h3 {
+  color: white;
+  font-size: 25px;
+}
+.about-img .about-info img {
+  height: 219px;
+  width: 397px;
+  filter: brightness(40%);
+  transition: 1s all ease;
+}
+.about-img .about-info .about-img-1 {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  height: 219px;
+  width: 397px;
+}
+.about-img .about-info .about-img-1 img:hover {
+  transform: scale(1.1);
+  /* background-color: #0ead69; */
+}
+.about-img .about-info .about-img-1:hover .btn1 {
+  background-color: #0ead69;
+}
+.about-img .about-info .about-img-1 .content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: flex-end;
+}
+.about-img .about-info .about-img-1 .content-grid .btn1 {
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  margin: auto;
+}
+/* =================== expert section ========================== */
+.expert-section {
+  background-color: aliceblue;
+}
+.expert-section .ex-se-inner {
+  padding: 50px;
+}
+.expert-section .ex-se-inner .heading {
+  text-align: center;
+}
+.expert-section .ex-se-inner .heading p {
+  color: #ee4266;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.expert-section .ex-se-inner .heading h1 {
+  font-size: 35px;
+}
+.expert-section .main-ex-sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 20px;
+  justify-items: center;
+  text-align: center;
+}
+.expert-section .main-ex-sec .ex-sec-1 {
+  padding: 20px;
+}
+.expert-section .main-ex-sec .ex-sec-1 .icon {
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  padding: 18px;
+  background-color: white;
+  border-radius: 50%;
+  color: #0ead69;
+}
+.expert-section .main-ex-sec .ex-sec-1 .icon span {
+  font-size: 40px;
+}
+.expert-section .main-ex-sec .ex-sec-1 h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.expert-section .main-ex-sec .ex-sec-1 a {
+  color: black;
+  font-size: 25px;
+}
+.expert-section .main-ex-sec .ex-sec-1 a:hover {
+  color: #0ead69;
+}
+.expert-section .main-ex-sec .ex-sec-1:hover .icon {
+  background-color: #0ead69;
+  color: white;
+}
+/* ================== project section =================== */
+
+.new-project img {
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+}
+.new-project .new-p-sec {
+  padding: 50px;
+  display: flex;
+}
+.new-project .new-p-sec .left-images {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+}
+.new-p-sec .right-content {
+  padding: 10px 20px;
+}
+.new-p-sec .right-content h6 {
+  color: #ee4266;
+  font-weight: 700;
+  font-size: 20px;
+}
+.new-p-sec .right-content h1 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.new-p-sec .right-content p {
+  color: gray;
+  padding-bottom: 20px;
+}
+.new-p-sec .right-content li {
+  line-height: 30px;
+}
+.new-p-sec .right-content li span {
+  color: #0ead69;
+  font-weight: 700;
+}
