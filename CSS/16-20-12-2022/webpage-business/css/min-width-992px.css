@@ -1,0 +1,72 @@
+@media (min-width: 992px) {
+  /* =========== heading ============= */
+  .header .bg-img {
+    height: 600px;
+  }
+  .header .nav-bar .nav {
+    flex: 8;
+    display: flex;
+    padding: 10px;
+  }
+  .header .nav-bar .theme {
+    /* padding: 0; */
+    justify-content: flex-end;
+    column-gap: 10px;
+  }
+  .header .nav-bar .theme button {
+    display: none;
+  }
+  /* ================ about as ================= */
+  .about .cont-space {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .about .cont-space .content-1 {
+    padding: 30px;
+  }
+  /* ================ about img section =============== */
+  .about-img .about-info {
+    padding: 50px;
+  }
+  .about-img .about-info .about-img-zoom {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 30px;
+  }
+  .about-img .about-info {
+    padding: 50px;
+  }
+  /* ================= expert section ===================== */
+  .expert-section .main-ex-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  /* ================== project section =================== */
+  .new-project img {
+    height: 350px;
+    width: 300px;
+  }
+  /* ===================== gallery ==================== */
+  .gallery-sec .container-g-sec {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .gallery-sec .container-g-sec .g-heading {
+    padding: 50px;
+  }
+  .gal-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* ============articals ================= */
+  .container-ar {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .artical .artical-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,40 @@
+@media (min-width: 1200px) {
+  .container {
+    border-bottom: 1px solid white;
+  }
+  /* =========== heading ============= */
+  .header .bg-img {
+    height: 700px;
+  }
+  .header .nav-bar .theme {
+    justify-content: flex-start;
+    column-gap: 10px;
+  }
+  /* ================== project section =================== */
+  .new-project img {
+    height: 400px;
+    width: 350px;
+  }
+  .new-project .new-p-sec {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  /* ===================== gallery ==================== */
+  .gallery-sec .container-g-sec {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .gallery-sec .container-g-sec .g-heading {
+    padding: 50px;
+  }
+  .gal-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* ============articals ================= */
+  .container-ar {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}

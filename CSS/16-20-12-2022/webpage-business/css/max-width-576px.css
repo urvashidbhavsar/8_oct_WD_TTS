@@ -1,0 +1,84 @@
+@media (max-width: 576px) {
+  .container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /* =========== heading ============= */
+  .header .bg-img {
+    height: 500px;
+  }
+  .header .nav-bar .nav {
+    display: none;
+  }
+  .header .nav .navig {
+    flex: 2;
+  }
+  .header .nav-bar .theme {
+    /* padding: 0; */
+    justify-content: flex-end;
+    column-gap: 10px;
+  }
+  .header .nav-bar .theme button {
+    display: block;
+  }
+  /* ================ about as ================= */
+  .about .cont-space {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .about .cont-space .content-1 {
+    padding: 0px;
+  }
+  /* ================ about img section =============== */
+  .about-img .about-info {
+    padding: 50px;
+  }
+  .about-img .about-info .about-img-zoom {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5px;
+  }
+  .about-img .about-info {
+    padding: 0px 20px;
+  }
+
+  /* ================= expert section ===================== */
+  .expert-section .main-ex-sec {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  /* ================== project section =================== */
+  .new-project img {
+    height: 250px;
+    width: 200px;
+  }
+  .new-project .new-p-sec {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* ============= sec-video =============*/
+  .sec-video .container-img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* ===================== gallery ==================== */
+  .gallery-sec .container-g-sec {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .gallery-sec .container-g-sec .g-heading {
+    padding: 20px;
+  }
+  .gal-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* ============articals ================= */
+  .artical .artical-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
