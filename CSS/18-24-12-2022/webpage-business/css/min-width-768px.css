@@ -1,0 +1,72 @@
+@media (min-width: 768px) {
+  /* ================ about as ================= */
+  .about .cont-space {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .about .cont-space .content-1 {
+    padding: 0px;
+  }
+  /* ================= expert section ===================== */
+  .expert-section .main-ex-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  /* ================== project section =================== */
+  .new-project img {
+    height: 300px;
+    width: 250px;
+  }
+  .new-project .new-p-sec {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* ===================== gallery ==================== */
+  .gallery-sec .container-g-sec {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .gallery-sec .container-g-sec .g-heading {
+    padding: 20px;
+  }
+  .gal-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ============articals ================= */
+  .artical .artical-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ================ client review ==================== */
+  .client-review .client-r-img .client-say {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .client-review .container-r {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .client-r-img .write-r-img .img-c {
+    flex: 7;
+  }
+  /* ================ companies logo=================== */
+  .comp-logo {
+    margin: 0px 70px;
+  }
+  .comp-logo .comp-logo-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* footer */
+  .footer .footer-content .footer-con-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer .footer-content form button {
+    right: -80px;
+  }
+}

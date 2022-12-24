@@ -1,0 +1,62 @@
+@media (min-width: 1200px) {
+  .container {
+    border-bottom: 1px solid white;
+  }
+  /* =========== heading ============= */
+  .header .bg-img {
+    height: 700px;
+  }
+  .header .nav-bar .theme {
+    justify-content: flex-start;
+    column-gap: 10px;
+  }
+  /* ================== project section =================== */
+  .new-project img {
+    height: 400px;
+    width: 350px;
+  }
+  .new-project .new-p-sec {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  /* ===================== gallery ==================== */
+  .gallery-sec .container-g-sec {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .gallery-sec .container-g-sec .g-heading {
+    padding: 50px;
+  }
+  .gal-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* ============articals ================= */
+  .container-ar {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  /* ================ client review ==================== */
+  .client-review .client-r-img .client-say {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .client-review .container-r {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  /* ================ companies logo=================== */
+  .comp-logo .comp-logo-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  /* footer */
+  .footer .footer-content .footer-con-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+  }
+  .footer .footer-content form button {
+    right: 0;
+  }
+}
