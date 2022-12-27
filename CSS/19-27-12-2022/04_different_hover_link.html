@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      .Link1::before {
+        content: "";
+      }
+      .Link1::after {
+        content: "";
+        height: 2px;
+        width: 150px;
+        display: block;
+        background-color: red;
+        transform: scaleX(0);
+        transition: 1s ease all;
+      }
+      .Link1:hover::after {
+        transform: scaleX(1);
+      }
+      .Link2::before {
+        content: "";
+      }
+      .Link2::after {
+        content: "";
+        height: 2px;
+        width: 150px;
+        display: block;
+        background-color: red;
+        transform: scaleY(0);
+        transition: 1s ease all;
+      }
+      .Link2:hover::after {
+        transform: scaleY(1);
+      }
+      .Link3::before {
+        content: "";
+        position: relative;
+      }
+      .Link3::after {
+        content: "";
+        position: absolute;
+        left: 7px;
+        height: 2px;
+        width: 150px;
+        display: block;
+        background-color: red;
+        transform: scaleX(0);
+        transform-origin: 0% 100%;
+        transition: 1s ease all;
+      }
+      .Link3:hover::after {
+        transform: scaleX(1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="" class="Link1">Click Here</a></h1>
+    <h1><a href="" class="Link2">Click Here</a></h1>
+    <h1><a href="" class="Link3">Click Here</a></h1>
+  </body>
+</html>
