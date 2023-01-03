@@ -1,0 +1,22 @@
+javascript is a scripting language.
+also known as object based scripting language.
+
+developed -> 1995
+who's stated -> netscape web browser
+
+javascript first name was -> livescript
+then name was changed in javascript.
+
+-> client side working.
+
+there are 3 ways to add javascript :
+(1) inline -> apply with events
+(2) internal -> apply with <script> tag in <head> or <body> tag.
+(3) external -> to create an external file with .js extension. ad attached with <script> tag.
+
+what is an object??
+it is a logical and physical items.
+
+for ex. TV -> features, color, screen, brands, ports, size, basel-less 
+
+person -> name, height, weight, address, date of birth
