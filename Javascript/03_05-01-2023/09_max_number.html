@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function max_num() {
+        // this variable get using form
+        // document.form_name.field_name.value
+
+        let num1 = document.form1.num1.value;
+        let num2 = document.form1.num2.value;
+
+        // let num1 = document.getElementById("n1").value;
+        // let num2 = document.getElementById("n2").value;
+
+        if (num1 > num2) {
+          console.log(num1);
+          document.getElementById("msg").innerHTML = num1 + " is max";
+          return false;
+        } else if (num2 > num1) {
+          console.log(num2);
+          document.getElementById("msg").innerHTML = num2 + " is max";
+          return false;
+        } else {
+          document.getElementById("msg").innerHTML =
+            num1 + " and " + num2 + " are same";
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="" name="form1">
+      <label for="">1st number :</label>
+      <input type="text" name="num1" id="n1" /> <br /><br />
+
+      <label for="">2nd number :</label>
+      <input type="text" name="num2" id="n2" /> <br /><br />
+
+      <button onclick="return max_num()">Result</button>
+
+      <p id="msg"></p>
+    </form>
+  </body>
+</html>

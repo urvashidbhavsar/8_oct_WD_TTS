@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function display() {
+        // console.log("hhhh");
+        document.getElementById("p1").innerHTML = "Hello world";
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="display()">Click Here</button>
+    <p id="p1"></p>
+
+    <!-- Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')
+         -> this error show when element cant find by script -->
+  </body>
+</html>
