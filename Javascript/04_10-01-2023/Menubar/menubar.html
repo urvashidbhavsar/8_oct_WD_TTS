@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="menubar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-p-top">
+          <div class="header-f-top">
+            <div class="logo">
+              <a href=""><h1>Logo</h1></a>
+            </div>
+            <div class="nav">
+              <ul>
+                <li>
+                  <button class="btn-close">
+                    <span class="fa-solid fa-close"></span>
+                  </button>
+                </li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+                <li>Help</li>
+              </ul>
+            </div>
+            <div class="theme">
+              <span class="fa-solid fa-moon"></span>
+              <button class="disp-menu">
+                <span class="fa-solid fa-bars"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      let disp = document.querySelector(".disp-menu");
+      let nav_bar = document.querySelector(".nav");
+      let close_btn = document.querySelector(".btn-close");
+
+      disp.addEventListener("click", function () {
+        // toggle() -> can add or remove class
+        // add() -> only add
+        // remove() -> only remove
+        nav_bar.classList.add("menu_list");
+        document.body.style.transitionDelay = 2000;
+      });
+
+      close_btn.addEventListener("click", function () {
+        nav_bar.classList.remove("menu_list");
+      });
+    </script>
+  </body>
+</html>
