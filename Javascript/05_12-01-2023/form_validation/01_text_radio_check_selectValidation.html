@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+    <script>
+      function form_valid() {
+        // document form_name field_name value
+        // let fname = document.form1.fname.value;
+
+        // isNaN() - is not a number
+        let fname = document.getElementById("f1").value;
+        if (fname == "" || fname == null) {
+          //   alert("enter name");
+          document.getElementById("fmsg").innerHTML = "Enter name";
+          return false;
+        } else if (!isNaN(fname)) {
+          document.getElementById("fmsg").innerHTML = "Digits not allowed";
+          return false;
+        }
+
+        // let male = document.form1.gen[0].checked;
+        // let female = document.form1.gen[1].checked;
+        let male = document.getElementById("male").checked;
+        let female = document.getElementById("female").checked;
+
+        if (male == false && female == false) {
+          document.getElementById("gmsg").innerHTML = "Select Gender";
+          return false;
+        }
+
+        let c1 = document.getElementById("c1").checked;
+        let c2 = document.getElementById("c2").checked;
+        let c3 = document.getElementById("c3").checked;
+        if (c1 == false && c2 == false && c3 == false) {
+          document.getElementById("cmsg").innerHTML = "Select Qualification";
+          return false;
+        }
+
+        let city = document.getElementById("city").value;
+        if (city == -1) {
+          document.getElementById("citymsg").innerHTML = "Select City";
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="#" method="get" name="form1" onsubmit="">
+      <label for="">Full name</label>
+      <input type="text" name="fname" id="f1" />
+      <span id="fmsg"></span>
+      <br /><br />
+
+      <label for="">Gender</label>
+      <input type="radio" name="gen" id="male" /> male
+      <input type="radio" name="gen" id="female" />Female
+      <span id="gmsg"></span>
+      <br /><br />
+
+      <label for="">Qualification</label>
+      <input type="checkbox" id="c1" />10th
+      <input type="checkbox" id="c2" />12th
+      <input type="checkbox" id="c3" />bachlor
+      <span id="cmsg"></span>
+      <br /><br />
+
+      <label for="">City</label>
+      <select name="city" id="city">
+        <option value="-1">---select---</option>
+        <option value="">Surat</option>
+        <option value="">Baroda</option>
+      </select>
+      <span id="citymsg"></span>
+      <br /><br />
+
+      <input
+        type="submit"
+        name=""
+        value="Check Validation"
+        onclick="return form_valid()"
+      />
+    </form>
+  </body>
+</html>
