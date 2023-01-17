@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="formValidation.js"></script>
+    <style>
+      form {
+        border: 2px solid black;
+        width: 50%;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        gap: 5px;
+        padding: 5px;
+      }
+      .col {
+        flex: 1;
+        text-align: right;
+      }
+      .col-2 {
+        flex: 2;
+      }
+      .col-3 {
+        flex: 1;
+        text-align: left;
+      }
+      span {
+        color: red;
+      }
+      input[type="text"] {
+        height: 20px;
+        width: 250px;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="get" name="form1">
+      <!-- first name -->
+      <div class="row">
+        <div class="col">First name</div>
+        <div class="col-2">
+          <input type="text" name="" id="fname" />
+        </div>
+        <div class="col-3">
+          <span id="fmsg"></span>
+        </div>
+      </div>
+
+      <!-- last name -->
+      <div class="row">
+        <div class="col">Last name</div>
+        <div class="col-2">
+          <input type="text" name="" id="lname" />
+        </div>
+        <div class="col-3">
+          <span id="lmsg"></span>
+        </div>
+      </div>
+
+      <!-- gender -->
+      <div class="row">
+        <div class="col">Gender</div>
+        <div class="col-2">
+          <input type="radio" name="gen" id="male" />Male
+          <input type="radio" name="gen" id="female" />Female
+        </div>
+        <div class="col-3">
+          <span id="genmsg"></span>
+        </div>
+      </div>
+
+      <!-- button -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-2">
+          <input
+            type="submit"
+            name=""
+            id=""
+            value="Check Validation"
+            onclick="return form_valid()"
+          />
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </form>
+  </body>
+</html>

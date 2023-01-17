@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+    <script>
+      function mobile_valid() {
+        let mno = document.getElementById("mno").value;
+
+        if (mno == "") {
+          document.getElementById("msg").innerHTML = "Enter mobile no";
+          return false;
+        } else if (isNaN(mno)) {
+          document.getElementById("msg").innerHTML =
+            "Alphabets are not allowed";
+          return false;
+        } else if (mno.length < 10) {
+          document.getElementById("msg").innerHTML = "Enter 10 digits";
+          return false;
+        }
+        // else if (mno.length > 10) {
+        //   document.getElementById("msg").innerHTML =
+        //     "You Enter more than 10 digits";
+        //   return false;
+        // }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <label for="">Mobile No</label>
+      <input type="text" name="" id="mno" maxlength="10" />
+      <span id="msg"></span>
+
+      <br /><br />
+      <input
+        type="submit"
+        name=""
+        id=""
+        value="submit"
+        onclick="return mobile_valid()"
+      />
+    </form>
+  </body>
+</html>

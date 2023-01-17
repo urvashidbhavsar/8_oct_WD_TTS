@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+    <script>
+      function email_valid() {
+        let mail = document.getElementById("mail").value;
+        let reg_mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/;
+        if (mail == "") {
+          document.getElementById("msg").innerHTML = "enter email";
+          return false;
+        } else if (!mail.match(reg_mail)) {
+          document.getElementById("msg").innerHTML = "Enter Email properly";
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <label for="">Enter Email : </label>
+      <input type="text" name="" id="mail" />
+      <span id="msg"></span>
+      <br /><br />
+      <input
+        type="submit"
+        name=""
+        id=""
+        value="Click Here"
+        onclick="return email_valid()"
+      />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      form {
+        width: 200px;
+        border: 2px solid black;
+        padding: 10px;
+        position: relative;
+      }
+      input[type="password"],
+      [type="text"] {
+        padding: 5px;
+      }
+      span {
+        position: absolute;
+        top: 17px;
+        right: 46px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="password" name="" id="spass" placeholder="Enter password" />
+      <span class="fa-solid fa-eye show_pass"></span>
+    </form>
+
+    <script>
+      let show_pass = document.querySelector(".show_pass");
+
+      show_pass.addEventListener("click", function () {
+        let pass = document.getElementById("spass");
+
+        if (
+          pass.type == "password" &&
+          show_pass.classList.contains("fa-eye") == true
+        ) {
+          show_pass.classList.remove("fa-eye");
+          show_pass.classList.add("fa-eye-slash");
+          pass.type = "text";
+        } else {
+          show_pass.classList.remove("fa-eye-slash");
+          show_pass.classList.add("fa-eye");
+          pass.type = "password";
+        }
+      });
+    </script>
+  </body>
+</html>
