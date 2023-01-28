@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+      .div1 {
+        display: none;
+        height: 100px;
+        width: 100px;
+        background-color: darkblue;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $(".div1").fadeIn(2000);
+        });
+
+        $("#btn2").click(function () {
+          $(".div1").fadeOut(2000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- fade functions -> fadeIn(), fadeOut(), fadeToggle(), fadeTo()
+        work on -> opacity property
+    -->
+    <button id="btn1">FadeIn function</button>
+    <button id="btn2">Fadeout function</button>
+
+    <hr />
+    <div class="div1"></div>
+  </body>
+</html>

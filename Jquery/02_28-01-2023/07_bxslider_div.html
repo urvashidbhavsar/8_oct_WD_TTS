@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- bxslide js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!-- bxslider css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"
+    />
+
+    <script>
+      $(document).ready(function () {
+        $(".bxslider").bxSlider({
+          mode: "fade",
+          speed: "1000",
+          pager: false,
+          controls: false,
+        });
+      });
+    </script>
+    <style>
+      .image {
+        border: 2px solid black;
+        display: flex;
+      }
+      .image .text {
+        flex: 1;
+      }
+      .image .img1 {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bxslider">
+      <div class="image">
+        <div class="text">
+          <h1>Hello world</h1>
+        </div>
+        <div class="img1">
+          <img src="images/img1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="image">
+        <div class="text">
+          <h1>Good Morning</h1>
+        </div>
+        <div class="img1">
+          <img src="images/igm3.png" alt="" />
+        </div>
+      </div>
+      <div class="image">
+        <div class="text">
+          <h1>Good Evening</h1>
+        </div>
+        <div class="img1">
+          <img src="images/img2.webp" alt="" />
+        </div>
+      </div>
+      <div class="image">
+        <div class="text">
+          <h1>Hello User</h1>
+        </div>
+        <div class="img1">
+          <img src="images/img4.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

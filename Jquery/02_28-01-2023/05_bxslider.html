@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- bxslide js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!-- bxslider css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"
+    />
+
+    <style>
+      img {
+        width: 100%;
+        height: 550px;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(".bxslider").bxSlider({
+          mode: "fade",
+          speed: "1000",
+          pager: false,
+          controls: false,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="bxslider">
+      <div class="image">
+        <img src="images/img1.jpg" alt="" />
+      </div>
+      <div class="image">
+        <img src="images/img2.webp" alt="" />
+      </div>
+      <div class="image">
+        <img src="images/igm3.png" alt="" />
+      </div>
+      <div class="image">
+        <img src="images/img4.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

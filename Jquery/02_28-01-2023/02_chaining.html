@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+      .div1 {
+        height: 200px;
+        width: 100%;
+        background-color: blueviolet;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          //   $(".div1").slideDown().fadeOut();
+          $(".div1").slideUp().fadeIn();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- chainning is not a function it is method. -->
+
+    <button id="btn1">Click Here to chainning</button>
+    <hr />
+    <div class="div1"></div>
+  </body>
+</html>
