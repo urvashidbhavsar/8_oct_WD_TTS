@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $navBar = $(".header");
+        $(window).scroll(function () {
+          $current = $(this).scrollTop();
+          if ($current > 0) {
+            $navBar.addClass("menu-fixed");
+          } else {
+            $navBar.removeClass("menu-fixed");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <div class="header-p">
+          <div class="navigation">
+            <div class="logo">
+              <h1>Logo</h1>
+            </div>
+            <div class="nav">
+              <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <img src="../images/img1.jpg" alt="" />
+      </div>
+      <div>
+        <img src="../images/img2.jpg" alt="" />
+      </div>
+      <div>
+        <img src="../images/img3.jpg" alt="" />
+      </div>
+    </section>
+  </body>
+</html>

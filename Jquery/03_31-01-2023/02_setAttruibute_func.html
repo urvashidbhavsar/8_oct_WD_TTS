@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("h1").text("Hello world !!!!!");
+        });
+
+        $("#btn2").click(function () {
+          $("p").html("<i>Hello world</i>");
+        });
+
+        $("#btn3").click(function () {
+          $("input").val("Hello user? How are you");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- get and set attribute function -> text(), val() and html() -->
+    <button id="btn1">Get Text()</button>
+    <button id="btn2">Get HTML()</button>
+    <button id="btn3">Get Val()</button>
+
+    <hr />
+    <h1>Hello world</h1>
+
+    <p>Hello world</p>
+
+    <input type="text" name="" id="" value="Hello user" readonly />
+  </body>
+</html>
