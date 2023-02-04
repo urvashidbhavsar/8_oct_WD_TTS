@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+      p {
+        width: 50%;
+      }
+      .para {
+        color: red;
+        font-size: 30px;
+      }
+    </style>
+    <script>
+      $(function () {
+        $("#btn1").click(function () {
+          //   $("p").filter(".p2").addClass("para");
+          //   $("p").first().addClass("para");
+          //   $("p").last().addClass("para");
+          //   $("p").not(".p3").addClass("para");
+          $("p").eq(5).addClass("para");
+          //   in eq() -> passed index number
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="btn1">click here</button>
+    <hr />
+    <p class="p1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laudantium
+      eos, odit minima aliquid deleniti? Laudantium similique sint consectetur
+      necessitatibus esse nostrum ut animi voluptatem maiores. Velit sequi quos
+      ipsum!
+    </p>
+    <p class="p2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, qui dolor
+      perspiciatis, nisi velit dolores fugit dolorem incidunt earum tenetur ad
+      cum, alias quam? Doloremque accusamus veritatis excepturi laborum aut!
+    </p>
+    <p class="p3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum ex
+      eligendi deleniti, velit, reprehenderit corporis libero porro
+      necessitatibus quidem pariatur sed molestiae culpa reiciendis illum. Ipsam
+      facilis alias officia.
+    </p>
+  </body>
+</html>

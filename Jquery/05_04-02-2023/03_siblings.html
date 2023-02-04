@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+      div,
+      li,
+      ul,
+      h1,
+      p {
+        border: 2px solid gray;
+        padding: 10px;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          //   $(".main").siblings().css("border-color", "blue");
+          //   $(".sub1").next().css("border-color", "blue");
+          //   $(".sub1").nextAll().css("border-color", "blue");
+          //   $(".sub1").nextUntil(".sub3").css("border-color", "blue");
+          //   $(".sub3").prev().css("border-color", "blue");
+          //   $(".sub3").prevAll().css("border-color", "blue");
+          $(".sub3").prevUntil(".sub1").css("border-color", "blue");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="btn1">Click Here</button>
+    <hr />
+    <div class="all">
+      <div class="main">
+        <div class="sub1">
+          <ul>
+            <li>Home</li>
+            <br />
+            <li>home</li>
+          </ul>
+          <h1>Hello world</h1>
+        </div>
+        <div class="sub2">
+          <h1>Hello world</h1>
+        </div>
+        <div class="sub3">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="main-2"></div>
+    </div>
+  </body>
+</html>
