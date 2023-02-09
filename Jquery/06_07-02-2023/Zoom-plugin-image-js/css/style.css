@@ -1,0 +1,36 @@
+.wrapper {
+  min-height: 400px;
+  margin-left: 10px;
+  display: flex;
+}
+.imageblock {
+  margin-left: 15px;
+}
+.settings {
+  width: 400px;
+}
+
+.settings__button {
+  display: block;
+  width: 120px;
+  margin-bottom: 5px;
+}
+.setting__inputset {
+  width: 100px;
+}
+.setting__inputset__fieldset {
+  border: 0;
+  margin-top: -15px;
+}
+#container {
+  margin-top: 200px;
+}
+
+#container.onehundredpercent {
+  width: 350px;
+  height: 250px;
+}
+
+#container.onehundredpercent img {
+  max-width: 100%;
+}
