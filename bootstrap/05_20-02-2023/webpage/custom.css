@@ -1,0 +1,185 @@
+.top-header{
+    position: fixed;
+    top :0;
+    z-index: 1111;width: 100%;
+    background-color: lightblue;
+}
+.top-header .search{
+    background-color: whitesmoke;
+    height: 35px;
+    width: 35px;
+    /* padding: 10px; */
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}   
+.top-header .logo{
+    color: white;
+}
+.top-header ul a{
+    color: white;
+    font-weight: 700;
+}
+.top-header ul a:hover{
+    color: rgb(255, 170, 0);
+}
+.top-header .drop-list a{
+    color: black;
+}
+.top-header .moon{
+    color: white;
+}
+.slider{
+    width: 100%;
+}
+.slider .slider1{
+    background-image: url(images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.slider .slider2{
+    background-image: url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.slider .slider3{
+    background-image: url(images/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.slider .slider4{
+    background-image: url(images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.slider1::after,.slider2::after,.slider3::after,.slider4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.539);
+    z-index: -1;
+}
+.slider .slider-text{
+    padding: 100px;
+    margin: 50px 0px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+.slider .btn1{
+    height: 45px;
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.slider .btn1:hover{
+    background-color: white;
+    color: rgb(255, 170, 0);
+}
+/* ============ about ============== */
+.about-as .about-c{
+    padding: 70px 0px !important;
+}
+.about-as .about-content h5{
+    color: rgb(255, 170, 0);
+}
+.about-as .about-content .btn-read{
+    background-color: transparent;
+    border: 2px solid rgb(255, 170, 0);
+    color: rgb(255, 170, 0);
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+}
+.about-as .about-content .btn-read:hover{
+    background-color: rgb(255, 170, 0);
+    color: white;
+}
+/* what we do */
+.what-we-do h5{
+    color: rgb(255, 170, 0);
+}
+
+/* informartion */
+.information{
+    background-color: rgb(240, 237, 233);
+}
+.information .info-grid{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.information .info-grid .icon span{
+    color: rgb(255, 170, 0);
+    font-size: 30px;
+}
+.information .info-grid{
+    transition: 1s all ease;
+}
+.information .info-grid:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 5px 0px gray;
+}
+/* offers */
+.offers .btn-read{
+    background-color: transparent;
+    border: 2px solid rgb(255, 170, 0);
+    color: rgb(255, 170, 0);
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+}
+.offers .btn-read:hover{
+    background-color: rgb(255, 170, 0);
+    color: white;
+}
+.offers .offer-bgimg{
+    background-image: url(images/banner1.jpg);
+    height: 380px;
+    background-position: center;
+    background-size: cover;
+}
+
+.offers .offer-bgimg1{
+    background-image: url(images/banner2.jpg);
+    height: 380px;
+    background-position: center;
+    background-size: cover;
+}
+.offers .offer-bgimg2{
+    background-image: url(images/banner4.jpg);
+    height: 380px;
+    background-position: center;
+    background-size: cover;
+}
+.offers .offer-text{
+    padding: 35px 80px;
+}
+.offers .offer-text h5{
+    color: rgb(255, 170, 0);
+    padding-bottom: 10px;
+} 
+.offers .grid-move{
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.offers .grid-move .icon span{
+  font-size: 25px;
+  color: rgb(255, 170, 0);
+}
