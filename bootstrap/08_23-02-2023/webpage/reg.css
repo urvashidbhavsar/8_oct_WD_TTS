@@ -1,0 +1,46 @@
+.reg_form{
+    margin: auto !important;
+    /* background-color: white !important; */
+    padding: 20px;
+    color:white
+    /* background-image: radial-gradient(rgb(153, 176, 176),rgb(1, 57, 57)); */
+}
+.reg_form input[type="text"],[type="date"],[type="password"] {
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    color: white;
+}
+.reg_form input[type="radio"]{
+    border: 2px solid black !important;
+    background-color: transparent;
+}
+.reg_form .form-control:focus{
+    border-color: black;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    box-shadow: none;
+}
+.reg_form .addr{
+    border-bottom: 2px solid black !important;
+    color: white;
+    background-color: transparent;
+}
+.reg_form .form-select:focus{
+    border-color: black;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    box-shadow: none;
+}
+.reg_form .select_op{
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    color: white;
+}
+.reg_form .e-label{
+    border-bottom:  2px solid black;
+    background-color: transparent;
+    color: white;
+
+}
