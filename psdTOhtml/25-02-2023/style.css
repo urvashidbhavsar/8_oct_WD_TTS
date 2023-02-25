@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* =============== header part ============== */
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1111;
+}
+header .header-flex{
+    display: flex;
+    justify-content: space-between;
+}
+header .header-flex .logo{
+    flex: 1;
+}
+header .logo img{
+  height: 50px;
+  width: 200px;
+}
+header .header-flex .menu{
+    flex: 1;
+}
+header .header-flex .menu .del-info{
+    text-align: right;
+    font-family: "Alfa Slab One";
+    color: rgb(61, 37, 20);
+}
+header .header-flex .navs ul{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+header .header-flex .navs li{
+    padding: 20px 0px;
+}
+header .header-flex .navs li a{
+    font-size: 21px;
+    font-family: "Bebas Neue";
+    color: rgb(61, 37, 20);
+    text-transform: uppercase;
+}
+.homepage{
+    background-image: url(images/pattern.png);
+    background-position: top;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+.homepage .home-p{
+    padding: 120px 0px 100px 0px;
+}
+.homepage .home-flex{
+    display: flex;
+}
+.homepage .home-flex .home-content{
+    flex: 1;
+    padding: 100px 0px;
+}
+.homepage .home-flex .home-content h5{
+    border: 2px dashed rgb(61, 37, 20);
+    padding: 10px;
+    width: 78%;
+}
+.homepage .home-flex .home-content p{
+    font-size: 70px;
+    font-family: "Alfa Slab One";
+    color: rgb(61, 37, 20);
+    text-transform: uppercase;
+    position: relative;
+}
+.homepage .home-flex .home-content p span{
+    font-size: 40px;
+    position: absolute;
+    /* top: 0; */
+    bottom: -28px;
+}
+
+.homepage .home-flex .home-image{
+    flex:1
+}
+
+
+
+.Title {
+    font-size: 362.5px;
+    font-family: "AlfaSlabOne";
+    color: rgb(61, 37, 20);
+    text-transform: uppercase;
+    line-height: 0.54;
+    text-align: left;
+    text-shadow: 3.936px 4.528px 0px rgba(254, 232, 188, 0.004);
+    -moz-transform: matrix( 0.31531915207554,0,0,0.31531915207554,0,0);
+    -webkit-transform: matrix( 0.31531915207554,0,0,0.31531915207554,0,0);
+    -ms-transform: matrix( 0.31531915207554,0,0,0.31531915207554,0,0);
+    position: absolute;
+    left: -299.349px;
+    top: 310.125px;
+    z-index: 135;
+  }
+  
